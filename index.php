@@ -60,6 +60,7 @@ $MovieList = [
 <body>
     <?php foreach ($MovieList as $movie) : ?>
         <div class="card">
+
             <div class="title">
                 <?php echo $movie->title ?>
             </div>
@@ -83,6 +84,7 @@ $MovieList = [
                 <?php echo $movie->vote ?>
 
             </div>
+
         </div>
     <?php endforeach; ?>
 </body>
