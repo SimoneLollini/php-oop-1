@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * # Movie 
+ * @param string title 
+ * @param string description 
+ * @param string genre
+ * @param string language
+ * @param string length 
+ * @param int vote
+ */
 class Movie
 {
     public $title;
@@ -7,7 +17,7 @@ class Movie
     public $genre;
     public $length;
     public $vote;
-    function __construct($title, $description, $language, $genre, $length, $vote)
+    function __construct(string $title, string $description, string $language, string $genre, string $length, int $vote)
     {
         $this->title = $title;
         $this->description = $description;
@@ -29,7 +39,7 @@ class Movie
 }
 
 
-$matrix = new Movie('matrix', 'Lorem ipsum matrix...', 'en', 'science fiction', '200', '7');
+$matrix = new Movie('matrix', 'Lorem ipsum matrix...', 'en', 'science fiction', '200', 7);
 // var_dump($matrix);
-$avatar = new Movie('Avatar', 'Lorem ipsum avatar...', 'en', 'fantasy', '190', '8');
+$avatar = new Movie('Avatar', 'Lorem ipsum avatar...', 'en', 'fantasy', '190', 8);
 // var_dump($avatar);
